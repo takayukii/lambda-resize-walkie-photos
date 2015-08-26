@@ -6,9 +6,9 @@ S3にアップロードされた画像を2種類のサイズにリサイズす�
 アップロード方法
 --
 
-下記のようにZIPでアーカイブし、AWSマネジメント・コンソールから手動でアップロードする
+下記のようにnpm installしてからZIPでアーカイブし、AWSマネジメント・コンソールから手動でアップロードする
 
 ```
+$ npm install
 $ zip -r lambda-resize-walkie-photos.zip index.js node_modules
 ```
-
