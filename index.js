@@ -40,7 +40,7 @@ exports.handler = function(event, context) {
     
     arrivalData = data;
     contentType = arrivalData.ContentType;
-    extension = contentType.split('/').pop();
+    extension = key.split('.').pop();
     
     return imageResize({
       srcData: arrivalData.Body,
